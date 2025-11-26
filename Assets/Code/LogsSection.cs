@@ -44,21 +44,6 @@ public class LogsSection : MonoBehaviour
         Application.logMessageReceivedThreaded += LogMessageReceivedCallback;
     }
 
-    void Start()
-    {
-        OVRManager.HMDAcquired += () => { LogCallback("OVRManager.HMDAcquired callback"); };
-        OVRManager.HMDLost += () => { LogCallback("OVRManager.HMDLost callback"); };
-        OVRManager.HMDMounted += () => { LogCallback("OVRManager.HMDMounted callback"); };
-        OVRManager.HMDUnmounted += () => { LogCallback("OVRManager.HMDUnmounted callback"); };
-        OVRManager.VrFocusAcquired += () => { LogCallback("OVRManager.VrFocusAcquired callback"); };
-        OVRManager.VrFocusLost += () => { LogCallback("OVRManager.VrFocusLost callback"); };
-        OVRManager.InputFocusAcquired += () => { LogCallback("OVRManager.InputFocusAcquired callback"); };
-        OVRManager.InputFocusLost += () => { LogCallback("OVRManager.InputFocusLost callback"); };
-        OVRManager.TrackingAcquired += () => { LogCallback("OVRManager.TrackingAcquired callback"); };
-        OVRManager.TrackingLost += () => { LogCallback("OVRManager.TrackingLost callback"); };
-        OVRManager.display.RecenteredPose += () => { LogCallback("OVRManager.display.RecenteredPose callback"); };
-    }
-
     //this is a default MonoBehaviour function, https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnApplicationFocus.html
     void OnApplicationFocus(bool hasFocus)
     {

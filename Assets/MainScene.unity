@@ -1212,6 +1212,7 @@ GameObject:
   - component: {fileID: 1084885575}
   - component: {fileID: 1084885577}
   - component: {fileID: 1084885576}
+  - component: {fileID: 1084885578}
   m_Layer: 0
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -1337,6 +1338,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084885574}
   m_CullTransparentMesh: 1
+--- !u!114 &1084885578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084885574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a201011ea3653e948a5f2d77eabec4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimestampFormat: HH:mm:ss | dddd dd MMMM
 --- !u!1 &1226937527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1923,7 +1937,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1454247293}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1662391475}
+        m_TargetAssemblyTypeName: LogsSection, Assembly-CSharp
+        m_MethodName: Mark
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1454247293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2615,6 +2641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1662391474}
   - component: {fileID: 1662391475}
+  - component: {fileID: 1662391476}
   m_Layer: 0
   m_Name: Logs Section
   m_TagString: Untagged
@@ -2662,6 +2689,18 @@ MonoBehaviour:
   LogColor: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
   WarningColor: {r: 0.9716981, g: 0.67415386, b: 0.24292453, a: 1}
   ErrorColor: {r: 1, g: 0.3726415, b: 0.3726415, a: 1}
+--- !u!114 &1662391476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662391473}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ff811fdaaedba41bae689b0005a452, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1715256980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,7 +2890,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1960779459}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1662391475}
+        m_TargetAssemblyTypeName: LogsSection, Assembly-CSharp
+        m_MethodName: ClearAllLogs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1960779459
 MonoBehaviour:
   m_ObjectHideFlags: 0
