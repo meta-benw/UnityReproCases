@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class SetFFRButton : MonoBehaviour
 {
-    public OVRPlugin.FoveatedRenderingLevel FFRLevel;
+    public OVRManager.FoveatedRenderingLevel FFRLevel;
     public void SetFFRLevel()
     {
-        OVRPlugin.foveatedRenderingLevel = FFRLevel;   
+        Debug.Log("Setting FFRLevel to " + FFRLevel);
+        OVRManager.foveatedRenderingLevel = FFRLevel;   
     }
 }
