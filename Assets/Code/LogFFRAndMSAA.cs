@@ -8,7 +8,7 @@ public class LogFFRAndMSAA : MonoBehaviour
         if (Time.frameCount % 90 == 0)
         {
             var renderPipelineAsset = GraphicsSettings.currentRenderPipeline as UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset;
-            Debug.LogFormat("FFR level is {0}, MSAA count is {1}", OVRManager.foveatedRenderingLevel, renderPipelineAsset.msaaSampleCount);
+            Debug.LogFormat("FFR level is {0} dynamic FFR is {1}, MSAA count is {2}", OVRManager.foveatedRenderingLevel, OVRManager.useDynamicFoveatedRendering, renderPipelineAsset.msaaSampleCount);
         }
     }
 }
